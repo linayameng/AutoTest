@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.study">
+    <!--登陆接口sql-->
+    <select id="login" parameterType="com.study.ai.model.User" resultType="Integer">
+
+        select count(*) from user
+        where name =#{name}
+        and password=#{password}
+    </select>
+
+    <!--添加用户接口-->
+    <insert id="addUser" parameterType="com.study.ai.model.User">
+        insert into
+        user (id,name ,password,age,token)
+        values (#{id},#{name},#{password},#{age},#{token});
+    </insert>
+
+    <!--获取用户信息sql-->
+    <select id="getUserInfo" parameterType="com.study.ai.model.User" resultType="com.study.ai.model.User">
+        select * from user
+        <trim prefix="WHERE" prefixOverrides="and">
+            <if test="null != name and '' !=name">
+                AND name=#{name}
+            </if>
+            <if test="null != password and '' !=password">
+                AND name=#{password}
+            </if>
+            <if test="null != age and '' !=age">
+                AND age=#{age}
+            </if>
+            <if test="null != token and '' !=token">
+                AND tocken=#{tocken}
+            </if>
+        </trim>
+    </select>
+
+
+    <!--更新/删除用户信息动作-->
+    <update id="updateUserInfo" parameterType="com.study.ai.model.User">
+        update user
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="null != name and '' !=name">
+                name=#{name},
+            </if>
+            <if test="null != password and '' !=password">
+                password=#{password},
+            </if>
+            <if test="null != age and '' !=age">
+                age=#{age},
+            </if>
+            <if test="null != token and '' !=token">
+                token=#{token},
+            </if>
+        </trim>
+        where id = #{id}
+    </update>
+
+</mapper>

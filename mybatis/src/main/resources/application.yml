@@ -1,0 +1,22 @@
+server:
+   port: 8899
+
+logging:
+    path: logs
+    file: mylog.log
+
+spring:
+   application:
+          name: myTest
+   datasource:
+       driver-class-name: com.mysql.jdbc.Driver
+       url: jdbc:mysql://127.0.0.1:3306/test
+       username: root
+       password: 123456
+
+mybatis:
+  # type-aliases-package 让mybatis自动扫描到自定义POJO
+    type-aliases-package: com.study.ai.model
+    #扫描mapper文件
+    mapper-locations:
+       - mapper/*

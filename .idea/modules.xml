@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/example-important/example-important.iml" filepath="$PROJECT_DIR$/example-important/example-important.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extend-reports/extendreports.iml" filepath="$PROJECT_DIR$/extend-reports/extendreports.iml" />
+      <module fileurl="file://$PROJECT_DIR$/httpclient/httpclient.iml" filepath="$PROJECT_DIR$/httpclient/httpclient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis/mybatis.iml" filepath="$PROJECT_DIR$/mybatis/mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis-to-check/mybatis-to-check.iml" filepath="$PROJECT_DIR$/mybatis-to-check/mybatis-to-check.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot/springboot.iml" filepath="$PROJECT_DIR$/springboot/springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-autotestnew.iml" filepath="$PROJECT_DIR$/study-autotestnew.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testng/testng.iml" filepath="$PROJECT_DIR$/testng/testng.iml" />
+    </modules>
+  </component>
+</project>

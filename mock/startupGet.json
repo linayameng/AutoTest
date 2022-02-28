@@ -8,7 +8,6 @@
     "response":{
       "text":"这是一个没有参数的get请求"
     }
-
   },
   {
     "description":"这是一个带参数get请求",
@@ -23,7 +22,5 @@
     "response":{
       "text":"我胡汉三又回来啦！！！！"
     }
-
   }
-
 ]

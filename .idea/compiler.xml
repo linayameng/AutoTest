@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mybatis" />
+        <module name="extendreports" />
+        <module name="mybatis-to-check" />
+        <module name="testng" />
+        <module name="httpclient" />
+        <module name="springboot" />
+        <module name="example-important" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="example-important" target="8" />
+      <module name="extendreports" target="8" />
+      <module name="httpclient" target="8" />
+      <module name="mybatis" target="8" />
+      <module name="mybatis-to-check" target="1.8" />
+      <module name="springboot" target="8" />
+      <module name="study-autotestnew" target="8" />
+      <module name="testng" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="example-important" options="-parameters" />
+      <module name="extendreports" options="-parameters" />
+      <module name="httpclient" options="-parameters" />
+      <module name="mybatis" options="-parameters" />
+      <module name="mybatis-to-check" options="-parameters" />
+      <module name="springboot" options="-parameters" />
+      <module name="testng" options="-parameters" />
+    </option>
+  </component>
+</project>

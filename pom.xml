@@ -3,6 +3,12 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+<!--springboot添加-->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.3.12.RELEASE</version>
+    </parent>
 
     <groupId>com.study.ai</groupId>
     <artifactId>study-autotestnew</artifactId>
@@ -10,6 +16,11 @@
     <modules>
         <module>testng</module>
         <module>extend-reports</module>
+        <module>httpclient</module>
+        <module>springboot</module>
+        <module>mybatis</module>
+        <module>example-important</module>
+        <module>mybatis-to-check</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -22,6 +33,11 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>6.10</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.22</version>
         </dependency>
     </dependencies>
 
