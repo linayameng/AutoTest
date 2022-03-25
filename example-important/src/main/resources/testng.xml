@@ -8,6 +8,11 @@
 <!--                    <include name="loginFalse"/>-->
                 </methods>
             </class>
+            <class name = "com.tester.cases.AddUserTest">
+                <methods>
+                    <include name="addUser"/>
+                </methods>
+            </class>
             <!--<class name="com.tester.cases.AddUserTest">-->
                 <!--<methods>-->
                     <!--<include name="addUser"/>-->
